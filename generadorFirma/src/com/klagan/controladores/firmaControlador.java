@@ -40,7 +40,7 @@ public class firmaControlador {
     }
 
     /**
-     * Método que prepara los datos y genera la firma para Outlook
+     * Mï¿½todo que prepara los datos y genera la firma para Outlook
      * @param nombre
      * @param cargo
      * @param telefono
@@ -49,11 +49,20 @@ public class firmaControlador {
      */
 	private void generarFirma(String nombre, String cargo, String telefono, String email, String direccion) {
 		generarQR(nombre,cargo,telefono,email,direccion);
+		prepararArchivosFirma();
 		
 	}
 
 	/**
-	 * Método que genera el QR con los datos de la firma
+	 * MÃ©todo que copia los archivos necesarios para la firma
+	 */
+	private void prepararArchivosFirma() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	/**
+	 * Mï¿½todo que genera el QR con los datos de la firma
 	 * @param nombre
 	 * @param cargo
 	 * @param telefono
@@ -67,6 +76,7 @@ public class firmaControlador {
             QRCode.from(visita).withSize(25, 25).to(ImageType.PNG).stream();
 
         try {
+        	
             OutputStream out = new FileOutputStream("/tmp/qr-code.png");
             bout.writeTo(out);
             out.flush();
