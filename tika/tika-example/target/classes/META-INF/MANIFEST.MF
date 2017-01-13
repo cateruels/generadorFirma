@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: Apache Tika examples
+Implementation-Version: 1.14
+Built-By: cateruels
+Specification-Vendor: The Apache Software Foundation
+Specification-Title: Apache Tika examples
+Implementation-Vendor-Id: org.apache.tika
+Build-Jdk: 1.8.0_111
+Specification-Version: 1.14
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: The Apache Software Foundation
+
