@@ -12,10 +12,8 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			Parent root = FXMLLoader.load(getClass().getResource("Formulario.fxml"));
-//			BorderPane root = new BorderPane();
 			Scene scene = new Scene(root,400,400);
 			primaryStage.setTitle("Generador de Firmas de K-lagan");
-			//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setWidth(715);
 			primaryStage.setHeight(350);
 			primaryStage.setScene(scene);
